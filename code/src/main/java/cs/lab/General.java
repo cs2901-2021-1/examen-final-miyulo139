@@ -7,6 +7,7 @@ import java.util.logging.Logger;
 public class General {
     private static General singleton = null;
     private Map<String, CentroVacunacion> centrosDeVacunacion;
+
     private Map<String, Usuario> usuarios;
     private HashMap<String, Usuario> usuariosActivos;
 
@@ -17,6 +18,14 @@ public class General {
             singleton = new General();
         }
         return singleton;
+    }
+
+    public Map<String, CentroVacunacion> getCentrosDeVacunacion() {
+        return centrosDeVacunacion;
+    }
+
+    public HashMap<String, Usuario> getUsuariosActivos() {
+        return usuariosActivos;
     }
 
     public void login(String username, String pwd){

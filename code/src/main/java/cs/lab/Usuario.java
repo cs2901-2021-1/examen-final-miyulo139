@@ -13,8 +13,7 @@ public class Usuario {
 
     String reversePassword(String username){
         StringBuilder strb = new StringBuilder(username);
-        String pwd = strb.reverse().toString();
-        return pwd;
+        return strb.reverse().toString();
     }
 
     public String getUsername() {
